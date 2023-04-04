@@ -1,0 +1,305 @@
+html,body{
+    max-height: 100%;
+    height:100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    margin-top:-1.2%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width:0px;
+    background:none;
+}
+.header{
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -40px;
+   
+}
+
+#icon{
+    height:190px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: block;
+    margin:0 auto;
+}
+@font-face {
+    font-family: cambria;
+    src: url(../fonts/Cambria-Italic.woff) format("woff");
+}
+
+.cards{
+    display: flex;
+    grid-gap:30px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card{
+    border: 0.7px solid black;
+    text-align: center;
+    font-family: cambria;
+    height:460px;
+    width:430px;
+    border-radius:25px;
+    font-size: 19px;
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation:fade-up 2s;
+}
+.card p{
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    margin:2px;
+}
+
+
+.img{
+    width:260px;
+    height:300px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
+#img{
+    object-fit: contain;
+}
+.img img{
+    object-fit: contain;
+    width:260px;
+    height:290px;
+     align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    display: block;
+    
+
+}
+button{
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    background: none;
+    padding: 10px;
+    border:0;
+    
+    background-color: #F89880;
+    color:black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 25px;
+    font-size: 17px;
+    width:150px
+
+}
+#corner{
+    transform: rotate(180deg);
+    height:250px;
+    margin-top:-300px;
+}
+#corner2{
+    float:right;
+    height:250px;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.7s;
+    cursor: pointer;
+    border:0;
+}
+button:hover{
+    background: none;
+    cursor: pointer;
+    border:1px solid #FFB6C1;
+}
+@keyframes fade-up{
+    0%{transform:translate(0px, 100px); opacity: 0;}
+    100%{transform:translate(0px, 0); opacity: 1;}
+
+}
+    
+
+@media only screen and (max-device-width:360px){
+
+    .cards{
+     display: flex;
+     flex-direction: column;
+     
+    }
+    .card {
+     height:600px;
+     width:400px;
+     
+    }
+    .img{
+        width:270px;
+    }
+    .img img{
+        width:270px;
+    }
+    #corner{
+        margin-top:-800px;
+        position: fixed;
+        
+    }
+    #corner2{
+        margin-top:-440px;
+        
+    }
+    html,body{
+        height:140%;
+    }
+    .card p{
+        font-size:21px;
+    }
+    button{
+        margin-bottom: 30px;;
+    }
+
+    
+
+
+ }   
+
+ @media only screen and (max-device-width:600px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        height:490px;
+    }
+
+    .img{
+        width:290px;
+    }
+    .img img{
+        width:290px;
+    }
+    #corner{
+        margin-top: -1000px;
+        position: fixed;
+    }
+    #corner2{
+        margin-top:-350px;
+    }
+
+ }
+
+ @media only screen and (max-device-width:712px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #corner{
+
+        margin-top:-800px;
+        position:fixed;
+    }
+    #corner2{
+        margin-top: -400px;
+    }
+
+ }
+ @media only screen and (max-device-width:800px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #corner{
+
+        margin-top:-800px;
+        position:fixed;
+    }
+    #corner2{
+        margin-top: -400px;
+    }
+
+ }
+ @media only screen and (max-device-width:820px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #corner{
+
+        margin-top:-800px;
+        position:fixed;
+    }
+    #corner2{
+        margin-top: -400px;
+    }
+
+ }
+ @media only screen and (max-device-width:912px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #corner{
+
+        margin-top:-800px;
+        position:fixed;
+    }
+    #corner2{
+        margin-top: -400px;
+    }
+
+ }
+ @media only screen and (max-device-width:1024px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #corner{
+
+        margin-top:-800px;
+        position:fixed;
+    }
+    #corner2{
+        margin-top: -400px;
+    }
+
+ }
+ @media only screen and (max-device-width:1280px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #corner{
+
+        margin-top:-800px;
+        position:fixed;
+    }
+    #corner2{
+        margin-top: -400px;
+    }
+
+ }
+
+
+ 
+ 

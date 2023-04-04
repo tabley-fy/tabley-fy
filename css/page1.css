@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;
+}
+::-webkit-scrollbar{
+    width:0;
+    background: none;
+}
+
+html,body{
+    height:100%;
+    background-color:#fff0db;
+    color:black;
+    width:100%;
+    margin-top:30px;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+@font-face {
+    font-family: catamaran;
+    src: url("../fonts/Catamaran.woff") format("woff");
+}
+@font-face {
+    font-family: somatic;
+    src: url("../fonts/Somatic-Rounded.woff") format("woff");
+}
+
+.header{
+    color:black;
+    font-size:30px;
+    text-align: center;
+    justify-content: center;
+    height:30px;
+    font-family: somatic;
+    
+    
+    
+}
+
+.header p{
+    text-align: center;
+    justify-content: center;
+    
+}
+#one{
+    margin:0;
+    margin-top: -10px;
+    position: fixed;
+    
+}
+
+.cards{
+    display: flex;
+    grid-gap:35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid black;
+    text-align: center;
+    font-family: catamaran;
+    height:370px;
+    width:340px;
+    border-radius:25px;
+    font-size: 20px;
+    font-weight: bolder;
+    animation:fade-up 2s;
+}
+
+#card-img{
+    height:70px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.card:hover{
+    box-shadow: 2px 2px 2px 2px  black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#p{
+    font-size:20px;
+    font-family: somatic;
+    text-align: center;
+    width:95%;
+    
+}
+#two{
+    margin-left:95%;
+    margin-top: -100px;
+    position: fixed;
+}
+@keyframes fade-up{
+    0%{transform:translate(0px, 100px); opacity: 0;}
+    100%{transform:translate(0px, 0); opacity: 1;}
+    
+
+}
+.try{
+    background:none;
+    padding:15px;
+    text-align: center;
+    font-size: 18px;
+    color:black;
+    border:2px solid black;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    display:block;
+    width: 250px;
+    
+
+}
+
+#try{
+    height:20px;
+    transform: rotate(45deg);
+    display: inline;
+}
+
+button:hover{
+    background-color:aqua;
+    cursor: pointer;
+
+}
+.footer{
+    width:100%;
+    background-color: black;
+    text-align: center;
+    height:80px;
+    position: fixed;
+    color: white;
+    font-family: catamaran;
+}
+#footer{
+    display: inline-flex;
+    height:14px;
+
+}
+@media only screen and (max-device-width: 414px){
+    .header{
+        color:black;
+        font-size:30px;
+        text-align: center;
+        justify-content: center;
+        height:30px;
+        font-family: somatic;    
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        
+        grid-gap:70px;
+    }
+    html,body{
+        max-width: 100%;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .footer{
+        margin-top: 119px;
+        font-size: 25px;
+
+    
+    }
+    .footer p{
+        margin-top:-15px;
+    }
+    #two{
+        margin-top:-200px;
+        height: 530px;
+    }
+    button{
+        visibility: visible ;
+        opacity: 1;
+    }
+    .card{
+        height:430px;
+        width:390px;
+    }
+    #one{
+        margin-top:120px;
+        height:330px;
+    }
+    
+
+}
+
+@media only screen and (max-device-width: 360px){
+
+
+    .footer{
+        margin-top: 11px;
+    }
+
+}
+@media only screen and (max-device-width: 375px){
+    .cards{
+        grid-gap:20px;
+        margin-top: -30px;
+    }
+    button{
+        visibility: visible;
+        opacity: 1;
+        bottom:5%;
+    }
+    #two{
+        margin-top:-350px;
+    }
+
+
+}
+@media only screen and (max-device-width:320px){
+    .footer{
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-device-width:360px){
+
+    html{
+        height:150%;
+
+    }
+    body{
+        height:110%;
+    }
+    .footer{
+        opacity:0;
+        
+    }
+    .cards{
+        grid-gap:50px;
+    }
+
+}
+
+@media only  screen and  (max-device-width:600px){
+    #one{
+        margin-top:100px;
+    }
+    .header{
+        margin-top:20px;
+    }
+    html,body{
+        height:120%;
+      
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer{
+        margin-top:-160px;
+    }
+    .footer{
+        margin-top: -65px;
+    }
+    .footer p{
+        margin-top:-6px;
+        font-size: 19px;
+    }
+
+}
+
+@media only screen and (max-device-width:712px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-top:-50px;
+    }
+    .footer{
+        opacity:0;
+    }
+    #one{
+        margin-top:130px;
+    }
+
+    #two{
+        margin-top:-190px;
+        
+    }
+}
+@media only screen and (max-device-width:800px){
+
+    .footer{
+        opacity:0;
+
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-top:-70px;
+    }
+    #one{
+        margin-top:130px;
+    }
+    #two{
+        margin-top:-190px;
+    }
+    
+    }
+    @media only screen and (max-device-width:384px){
+
+        #two{
+            margin-top:-420px;
+        }
+        .cards{
+            grid-gap: 30px;
+        }
+
+        
+        
+        }
+
+        @media only screen and (max-device-width:353px){
+
+            .cards{
+                grid-gap:60px;
+                margin-top: 40px;
+            }
+           
+            
+            
+            }    
+
+
+
+       @media only screen and (max-device-width:820px){
+
+            .cards{
+                grid-gap:40px;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .footer{
+              
+                opacity:0;
+            }
+
+            #two{
+                margin-top:-400px;
+            }
+            #one{
+                margin-top:200px;
+            }
+           
+            
+            
+            }   
+            @media only screen and (max-device-width:912px){
+
+                .cards{
+                    grid-gap:40px;
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .footer{
+                  
+                    opacity:0;
+                }
+    
+                #two{
+                    margin-top:-400px;
+                }
+                #one{
+                    margin-top:200px;
+                }
+               
+                
+                
+                } 
+                @media only screen and (max-device-width:1024px){
+
+                    .cards{
+                        grid-gap:40px;
+                        margin-top: 10px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .footer{
+                      
+                        opacity:0;
+                    }
+        
+                    #two{
+                        margin-top:-400px;
+                    }
+                    #one{
+                        margin-top:200px;
+                    }
+                   
+                    
+                    
+                    }             
+
+

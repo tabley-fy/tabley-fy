@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+@font-face {
+    font-family: catamaran;
+    src: url("../fonts/Catamaran.woff") format("woff");
+}
+@font-face {
+    font-family: somatic;
+    src: url("../fonts/Somatic-Rounded.woff");
+}
+
+
+}
+
+.container{
+    height:70%;
+    width:90%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.timetable{
+  
+    grid-gap:20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.day1{
+    width:280px;
+    height:370px;
+    background-color: lightcoral;
+}
+.day2{
+    width:280px;
+    height:370px;
+    background-color: lightpink;
+}
+.day3{
+    width:280px;
+    height:370px;
+    background-color: chartreuse;
+}
+.day4{
+    width:280px;
+    height:370px;
+    background-color: mediumturquoise;
+}
+.day5{
+    width:280px;
+    height:370px;
+    background-color: lightblue;
+}
+h3{
+    font-family: somatic;
+    color: black;
+    font-size:21px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: black;
+    font-size:21px;
+
+}
